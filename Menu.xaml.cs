@@ -16,23 +16,25 @@ using System.Windows.Shapes;
 namespace Pong_csharp
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Menu.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Menu : Page
     {
-        public MainWindow()
+        public Menu()
         {
             InitializeComponent();
         }
 
         private void Start_Game(object sender, RoutedEventArgs e)
         {
-
+            Game view = new Game();
+            this.NavigationService.Navigate(view);
         }
 
         private void Settings(object sender, RoutedEventArgs e)
         {
-
+            Settings view = new Settings();
+            this.NavigationService.Navigate(view);
         }
 
         private void Quit(object sender, RoutedEventArgs e)

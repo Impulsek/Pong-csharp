@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Pong_csharp
 {
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class MainWindow : NavigationWindow
     {
-        public Page1()
+        public MainWindow()
         {
             InitializeComponent();
         }

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\kamil\source\repos\Pong csharp\obj\Debug\
+C:\Users\kamil\source\repos\Pong-csharp\Pong-csharp\obj\Debug\
 Pong_csharp
 none
 false
 DEBUG;TRACE
-C:\Users\kamil\source\repos\Pong csharp\App.xaml
-2-1740574505
+C:\Users\kamil\source\repos\Pong-csharp\Pong-csharp\App.xaml
+4-1267602734
 
-6413154471
+82146190167
 13-1505183044
-Menu.xaml;Page1.xaml;
+Game.xaml;MainWindow.xaml;Menu.xaml;Settings.xaml;
 
 False
 

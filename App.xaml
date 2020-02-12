@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:Pong_csharp"
              StartupUri="Menu.xaml">
     <Application.Resources>
-         
+        
+
     </Application.Resources>
 </Application>
