@@ -5,14 +5,29 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Pong_csharp"
       mc:Ignorable="d" 
-      d:DesignHeight="720" d:DesignWidth="1280"
+      Height="720" Width="1280"
       Background="Gray"
+      FocusManager.FocusedElement="{Binding ElementName=MyCanvas}"
       Title="Game">
 
-    <Grid>
-        <Ellipse Fill="Red" HorizontalAlignment="Left" Height="50" Margin="598,345,0,0" Stroke="Black" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.64,1.11"/>
-        <Rectangle Fill="Green" HorizontalAlignment="Left" Height="240" Margin="0,242,0,0" Stroke="Black" VerticalAlignment="Top" Width="46"/>
-        <Rectangle Fill="Blue" HorizontalAlignment="Left" Height="240" Margin="1234,242,0,0" Stroke="Black" VerticalAlignment="Top" Width="46"/>
+    <Canvas Name="MyCanvas" KeyDown="Canvas_KeyDown" Focusable="True">
+        <Ellipse Fill="Red" Name="Ball" Focusable="False" HorizontalAlignment="Left" Height="50" Margin="598,345,0,0" Stroke="Black" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.64,1.11"/>
+        <Rectangle Name="Player" Focusable="True" HorizontalAlignment="Left" Height="240" Canvas.Top="230" Width="46">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="Green"></SolidColorBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Fill="Blue" Focusable="False" HorizontalAlignment="Left" Height="240" Margin="1234,242,0,0" VerticalAlignment="Top" Width="46"/>
+        <TextBox x:Name="Player_score" Focusable="False" FontSize="50" BorderThickness="0" Foreground="Green" Height="73" Canvas.Left="182" TextWrapping="Wrap" Text="00" Canvas.Top="10" Width="68">
+            <TextBox.Background>
+                <SolidColorBrush Color="Gray"></SolidColorBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="CPU_score" Focusable="False" FontSize="50" BorderThickness="0" Foreground="Blue" Height="73" Canvas.Left="1000" TextWrapping="Wrap" Text="00" Canvas.Top="10" Width="68">
+            <TextBox.Background>
+                <SolidColorBrush Color="Gray"></SolidColorBrush>
+            </TextBox.Background>
+        </TextBox>
 
-    </Grid>
+    </Canvas>
 </Page>

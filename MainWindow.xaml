@@ -6,6 +6,6 @@
         xmlns:local="clr-namespace:Pong_csharp"
         mc:Ignorable="d"
         Title="Pong" Height="720" Width="1280" Source="Menu.xaml"
-        Background="Gray" WindowStyle="None">
+        Background="Gray" WindowStyle="None" ResizeMode="NoResize">
     
 </NavigationWindow>
